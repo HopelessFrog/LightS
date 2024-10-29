@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:gravity="bottom"
+    android:background="@drawable/rounded_background_off"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center">
+
+        <TextView
+            android:text="\@_@"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:id="@+id/textLightData"
+            style="@style/TextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_margin="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center"
+        android:background="@drawable/rounded_button_background"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ON"
+            android:textSize="16sp"
+            android:textColor="#4CAF50"
+            android:visibility="gone"
+            android:id="@+id/text_on" />
+
+        <ImageButton
+            android:id="@+id/switchButton"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/button_selector"
+            android:src="@drawable/ic_bulb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFF"
+            android:textSize="16sp"
+            android:textColor="#F44336"
+            android:visibility="visible"
+            android:id="@+id/text_off" />
+    </LinearLayout>
+
+
+</LinearLayout>

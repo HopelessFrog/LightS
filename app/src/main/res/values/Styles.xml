@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/backgroundGreen</item>
+        <item name="colorPrimaryDark">@color/backgroundGray</item>
+        <item name="colorAccent">@color/switchTrackColor</item>
+    </style>
+
+    <style name="SwitchStyle">
+        <item name="android:thumbTint">@color/switchThumbColor</item>
+        <item name="android:trackTint">@color/switchTrackColor</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="TextViewStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:padding">16dp</item>
+    </style>
+</resources>
+
