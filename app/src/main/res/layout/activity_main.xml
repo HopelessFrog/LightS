@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
@@ -8,6 +9,7 @@
     android:background="@drawable/rounded_background_off"
     android:padding="16dp">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -15,7 +17,7 @@
         android:gravity="center">
 
         <TextView
-            android:text="\@_@"
+            android:text="@string/Smile"
             android:textSize="24sp"
             android:textStyle="bold"
             android:id="@+id/textLightData"
@@ -25,9 +27,9 @@
     </RelativeLayout>
 
     <LinearLayout
-        android:layout_margin="100dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:orientation="vertical"
         android:padding="24dp"
         android:gravity="center"
@@ -37,7 +39,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="ON"
+            android:text="@string/On"
             android:textSize="16sp"
             android:textColor="#4CAF50"
             android:visibility="gone"
@@ -53,12 +55,18 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="OFF"
+            android:text="@string/Off"
             android:textSize="16sp"
             android:textColor="#F44336"
             android:visibility="visible"
             android:id="@+id/text_off" />
     </LinearLayout>
 
-
+    <Button
+        android:layout_gravity="top"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="toSensors"
+        android:text="@string/Sensors" />
 </LinearLayout>

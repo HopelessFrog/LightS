@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">LightS</string>
+    <string name="On">ON</string>
+    <string name="Off">OFF</string>
+    <string name="Sensors">SENSORS</string>
+    <string name="Smile">\@_@</string>
+
 </resources>

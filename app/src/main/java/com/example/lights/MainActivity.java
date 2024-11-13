@@ -3,6 +3,7 @@ package com.example.lights;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.hardware.Sensor;
@@ -71,6 +72,10 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
 
 
+    public void toSensors(View view) {
+        Intent intent = new Intent(MainActivity.this, SensorsList.class);
+        startActivity(intent);
+    }
     private void updateSwitch() {
         if (isOn) {
             sensorManager.registerListener(this, lightSensor, SensorManager.SENSOR_DELAY_NORMAL);
