@@ -1,8 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="backgroundGray">#F2F2F2</color>
-    <color name="backgroundGreen">#A5D6A7</color>
-    <color name="switchThumbColor">#FFFFFF</color>
-    <color name="switchTrackColor">#81C784</color>
-    <color name="textColor">#333333</color>
+    <color name="background_color">#FFFFFF</color>
+    <color name="text_color">#000000</color>
+    <color name="primary">#4CAF50</color>
+    <color name="error">#F44336</color>
+    <color name="button_background">#DDDDDD</color>
 </resources>

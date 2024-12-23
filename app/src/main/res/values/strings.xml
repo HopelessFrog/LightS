@@ -4,5 +4,20 @@
     <string name="Off">OFF</string>
     <string name="Sensors">SENSORS</string>
     <string name="Smile">\@_@</string>
+    <string name="Index">индекс типа: </string>
+    <string name="Creator">производитель: </string>
+    <string name="Version">версия: </string>
+    <string name="Power">мощность: </string>
+    <string name="Mbt">мВт</string>
+    <string name="Mks">] мкс</string>
+    <string name="Delay">задержка: [</string>
+    <string name="Kom">,</string>
+    <string name="Max">макс. значение: </string>
+    <string name="Acc">точность: </string>
+    <string name="Sensor">Датчик освещенности</string>
+    <string name="SensorUn">Датчик освещенности недоступен</string>
+
+    <string name="Lux"> люкс</string>
+
 
 </resources>

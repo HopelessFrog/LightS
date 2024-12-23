@@ -24,14 +24,14 @@ public class SensorsList extends AppCompatActivity {
             deviceSensors = sensorManager.getSensorList(Sensor.TYPE_ALL);
             List<String> listSensorType = new ArrayList<>();
             for (int i = 0; i < deviceSensors.size(); i++) {
-                listSensorType.add(Integer.toString(i) + " " + deviceSensors.get(i).getName() + "\n" +
-                        "индекс типа: " + deviceSensors.get(i).getType() + "\n" +
-                        "производитель: " + deviceSensors.get(i).getVendor() + "\n" +
-                        "версия: " + deviceSensors.get(i).getVersion() + "\n" +
-                        "мощность: " + deviceSensors.get(i).getPower() + " мВт\n" +
-                        "задержка: [" + deviceSensors.get(i).getMinDelay() + "," + deviceSensors.get(i).getMaxDelay() + "] мкс\n" +
-                        "макс. значение: " + deviceSensors.get(i).getMaximumRange() + "\n" +
-                        "точность: " + deviceSensors.get(i).getResolution() + "\n"
+                listSensorType.add(Integer.toString(i + 1) + " " + deviceSensors.get(i).getName() + "\n" +
+                        getString(R.string.Index) + " " + deviceSensors.get(i).getType() + "\n" +
+                        getString(R.string.Creator) + " " + deviceSensors.get(i).getVendor() + "\n" +
+                        getString(R.string.Version) + " " + deviceSensors.get(i).getVersion() + "\n" +
+                        getString(R.string.Power) + " " + deviceSensors.get(i).getPower() + " " + getString(R.string.Mbt) + "\n" +
+                        getString(R.string.Delay) + " " + deviceSensors.get(i).getMinDelay() + getString(R.string.Kom) + deviceSensors.get(i).getMaxDelay() + getString(R.string.Mks) + "\n" +
+                       getString(R.string.Max)  + " " + deviceSensors.get(i).getMaximumRange() + "\n" +
+                        getString(R.string.Acc) + " " + deviceSensors.get(i).getResolution() + "\n"
                 );
             }
             adapter = new ArrayAdapter<>(this, R.layout.list_item, listSensorType);

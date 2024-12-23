@@ -1,0 +1,7 @@
+<resources>
+    <color name="background_color">#121212</color>
+    <color name="text_color">#FFFFFF</color>
+    <color name="primary">#81C784</color>
+    <color name="error">#E57373</color>
+    <color name="button_background">#333333</color>
+</resources>

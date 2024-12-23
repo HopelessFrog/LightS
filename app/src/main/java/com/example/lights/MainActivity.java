@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         lightSensor = sensorManager.getDefaultSensor(Sensor.TYPE_LIGHT);
 
         if (lightSensor == null) {
-            textLightData.setText("Датчик освещенности недоступен");
+            textLightData.setText(getString(R.string.SensorUn));
             return;
         }
 
@@ -82,15 +82,13 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             switchButton.setSelected(true);
             textOn.setVisibility(View.VISIBLE);
             textOff.setVisibility(View.GONE);
-            view.setBackgroundResource(R.drawable.rounded_background);
         } else {
             sensorManager.unregisterListener(this);
             notificationManager.cancel(1);
-            textLightData.setText("@_@");
+            textLightData.setText(getString(R.string.Smile));
             switchButton.setSelected(false);
             textOn.setVisibility(View.GONE);
             textOff.setVisibility(View.VISIBLE);
-            view.setBackgroundResource(R.drawable.rounded_background_off);
 
         }
     }
@@ -100,7 +98,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     public void onSensorChanged(SensorEvent event) {
         if (event.sensor.getType() == Sensor.TYPE_LIGHT) {
             float lightValue = event.values[0];
-            String lightText = lightValue + " люкс";
+            String lightText = lightValue +" "+ getString(R.string.Lux);
             textLightData.setText(lightText);
 
             if (isOn) {
@@ -118,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private void showNotification(String lightText) {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
                 .setSmallIcon(R.drawable.ic_bulb)
-                .setContentTitle("Датчик освещенности")
+                .setContentTitle(getString(R.string.Sensor))
                 .setContentText(lightText)
                 .setPriority(NotificationCompat.PRIORITY_HIGH);
 
